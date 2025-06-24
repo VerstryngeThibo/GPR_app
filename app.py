@@ -14,7 +14,7 @@ st.sidebar.title("GPR Parameters")
 lengthscale = st.sidebar.slider("Lengthscale l", 0.1, 10.0, 1.5, 0.1)
 variance = st.sidebar.slider("Signal Variance σ²", 0.1, 10.0, 1.0, 0.1)
 nu = st.sidebar.slider("Smoothness ν", 0.5, 2.5, 1.5, 0.1)
-noise_level = st.sidebar.slider("Noise Level", 0.00001, 1.0, 0.01, 0.001, format="%.4f")
+noise_level = st.sidebar.slider("Noise Level", 0.01, 0.1, 0.01, 0.001, format="%.4f")
 
 # Kernel definition
 kernel = (
